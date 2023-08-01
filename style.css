@@ -1,0 +1,39 @@
+:root{
+    --default-radius: 5px;
+    --default-color: black;
+    --default-spacing: 10px;
+    --secondary-color: beige;
+}
+
+body{
+    all: unset;
+}
+
+    .container{
+        margin: 40px;
+        padding: var(--default-spacing);
+        width: 500px;
+        border: 2px solid var(--default-color);
+        border-radius: var(--default-radius);
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+        .container input{
+            width: 250px;
+        }
+
+    .library{
+        margin: 40px;
+        padding: var(--default-spacing);
+        border: 2px dotted var(--default-color);
+        border-radius: var(--default-radius);
+
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+        .library p{
+            background-color: var(--secondary-color);
+        }
