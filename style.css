@@ -24,6 +24,13 @@ body{
             width: 250px;
         }
 
+        .container fieldset{
+            width: 350px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
     .library{
         margin: 40px;
         padding: var(--default-spacing);
@@ -31,9 +38,20 @@ body{
         border-radius: var(--default-radius);
 
         display: grid;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
     }
 
-        .library p{
+        .library div{
             background-color: var(--secondary-color);
+            border: 2px dotted var(--default-color);
+            padding: 5px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .library img{
+            align-self: self-end;
+
         }
